@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/nav_classes"
+        android:title="My Classes"
+        android:icon="@android:drawable/ic_menu_agenda"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/nav_account"
+        android:title="Account"
+        android:icon="@android:drawable/ic_menu_manage"
+        app:showAsAction="ifRoom"/>
+
+</menu>
