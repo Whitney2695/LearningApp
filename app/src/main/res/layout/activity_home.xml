@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome Back, John Doe"
+        android:text="Welcome Back, Whitney Navalia"
         android:textSize="20sp"
         android:textStyle="bold"
         android:paddingBottom="16dp"/>
@@ -29,5 +29,6 @@
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
         app:labelVisibilityMode="labeled"/>
+
 
 </LinearLayout>
