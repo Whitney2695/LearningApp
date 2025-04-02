@@ -3,24 +3,115 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/lightPurple">
 
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learning App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkPurple"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Facebook and Google Login Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:background="@color/darkPurple"
+            android:textColor="@color/white"/>
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:background="@color/darkPurple"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <!-- Email Input -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"/>
+        android:hint="Email"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColorHint="@color/borderGray"
+        android:layout_marginBottom="12dp"/>
 
+    <!-- Password Input -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:inputType="textPassword"/>
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:background="@drawable/input_background"
+        android:textColorHint="@color/borderGray"
+        android:layout_marginBottom="12dp"/>
 
+    <!-- Remember Me & Forgot Password -->
+    <!-- Remember Me & Forgot Password -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cbRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:textColor="@color/darkPurple"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="@color/darkPurple"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <!-- Login Button -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Log in"/>
+        android:text="Log in with your account"
+        android:background="@color/darkPurple"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Create Account Link -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Create account"
+        android:textColor="@color/darkPurple"
+        android:textStyle="bold"/>
 </LinearLayout>
