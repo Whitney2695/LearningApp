@@ -1,34 +1,189 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lightPurple"
     android:padding="16dp">
 
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="space-between"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkPurple"/>
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pencil"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <!-- Categories Section -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome Back, Whitney Navalia"
-        android:textSize="20sp"
+        android:text="Categories"
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:paddingBottom="16dp"/>
+        android:textColor="@color/darkPurple"
+        android:layout_marginTop="8dp"/>
 
-    <Button
-        android:id="@+id/btnBookClass"
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Book Class"
-        android:backgroundTint="@color/purple"
-        android:textColor="@android:color/white"/>
+        android:paddingTop="8dp"
+        android:scrollbars="none">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Math"
+                android:background="@drawable/category_button"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:background="@drawable/category_button"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:background="@drawable/category_button"
+                android:textColor="@color/white"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Course List -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Courses"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkPurple"
+        android:layout_marginTop="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@drawable/course_card"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/course_placeholder"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Algebra Basics"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkPurple"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Math - 12 Lessons"
+                        android:textSize="14sp"
+                        android:textColor="@color/borderGray"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Duplicate Course Card for Other Courses -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@drawable/course_card"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/course_placeholder"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Physics Fundamentals"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkPurple"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Science - 10 Lessons"
+                        android:textSize="14sp"
+                        android:textColor="@color/borderGray"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/bottom_nav_menu"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:labelVisibilityMode="labeled"/>
-
-
+        android:background="@color/darkPurple"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_nav_menu"/>
 </LinearLayout>
