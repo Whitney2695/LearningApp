@@ -9,16 +9,18 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="235dp"
-        android:gravity="center"
-        android:textColor="@color/darkPurple"
         android:layout_marginTop="200dp"
+        android:gravity="center"
         android:text="@string/app_name"
+        android:textColor="@color/darkPurple"
         android:textSize="105dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="1425dp"
-        android:layout_height="919dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/pencil" />
 
     <EditText
@@ -27,51 +29,72 @@
         android:layout_height="265dp"
         android:ems="10"
         android:textColor="@color/darkPurple"
-        android:layout_marginTop="30px"
+        android:layout_marginTop="30dp"
         android:textSize="105dp"
         android:inputType="text"
         android:text="@string/course" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="494dp"
-        android:layout_height="134dp"
-        android:textSize="90dp"
-        android:text="Beginner" />
+    <!-- Horizontal layout for the three buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="578dp"
-        android:layout_height="136dp"
-        android:text="intermediate"
-        android:textSize="90dp" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="134dp"
+            android:layout_weight="1"
+            android:textSize="90dp"
+            android:text="Beginner" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="481dp"
-        android:layout_height="149dp"
-        android:textSize="90dp"
-        android:text="  Expert" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="134dp"
+            android:layout_weight="1"
+            android:text="Intermediate"
+            android:textSize="90dp" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="125dp"
-        android:layout_height="77dp"
-        android:text="CheckBox" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="134dp"
+            android:layout_weight="1"
+            android:textSize="90dp"
+            android:text="Expert" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="1121dp"
-        android:layout_height="123dp"
-        android:textSize="105dp"
-        android:text="Are you sure" />
+    <!-- Horizontal layout for checkbox and label -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_marginStart="16dp"
+            android:text="Are you sure" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="1018dp"
+        android:layout_width="match_parent"
         android:layout_height="181dp"
         android:textSize="105dp"
         android:text="Continue" />
-
 
 </LinearLayout>
