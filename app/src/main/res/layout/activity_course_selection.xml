@@ -1,22 +1,77 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp">
 
-    <RadioGroup
-        android:id="@+id/radioGroupLevels"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="235dp"
+        android:gravity="center"
+        android:textColor="@color/darkPurple"
+        android:layout_marginTop="200dp"
+        android:text="@string/app_name"
+        android:textSize="105dp" />
 
-        <RadioButton android:id="@+id/radioBeginner" android:text="Beginner"/>
-        <RadioButton android:id="@+id/radioIntermediate" android:text="Intermediate"/>
-        <RadioButton android:id="@+id/radioExpert" android:text="Expert"/>
-    </RadioGroup>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1425dp"
+        android:layout_height="919dp"
+        app:srcCompat="@drawable/pencil" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:ems="10"
+        android:textColor="@color/darkPurple"
+        android:layout_marginTop="30px"
+        android:textSize="105dp"
+        android:inputType="text"
+        android:text="@string/course" />
 
     <Button
-        android:id="@+id/btnContinue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Continue"/>
+        android:id="@+id/button"
+        android:layout_width="494dp"
+        android:layout_height="134dp"
+        android:textSize="90dp"
+        android:text="Beginner" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="578dp"
+        android:layout_height="136dp"
+        android:text="intermediate"
+        android:textSize="90dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="481dp"
+        android:layout_height="149dp"
+        android:textSize="90dp"
+        android:text="  Expert" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="125dp"
+        android:layout_height="77dp"
+        android:text="CheckBox" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="1121dp"
+        android:layout_height="123dp"
+        android:textSize="105dp"
+        android:text="Are you sure" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="1018dp"
+        android:layout_height="181dp"
+        android:textSize="105dp"
+        android:text="Continue" />
+
+
 </LinearLayout>

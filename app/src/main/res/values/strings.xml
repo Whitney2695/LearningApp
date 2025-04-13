@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LearningApp</string>
+    <string name="course">Select Your Course Level</string>
+
 </resources>
