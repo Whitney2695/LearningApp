@@ -2,5 +2,6 @@
     <string name="app_name">LearningApp</string>
     <string name="course">Select Your Course Level</string>
     <string name="computer">Computer Science</string>
+    <string name="applied">Applied Computer Science</string>
 
 </resources>
