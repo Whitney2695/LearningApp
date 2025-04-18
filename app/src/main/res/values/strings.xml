@@ -3,5 +3,6 @@
     <string name="course">Select Your Course Level</string>
     <string name="computer">Computer Science</string>
     <string name="applied">Applied Computer Science</string>
+    <string name="it">Information Technology</string>
 
 </resources>
