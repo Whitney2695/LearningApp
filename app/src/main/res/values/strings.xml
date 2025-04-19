@@ -4,5 +4,6 @@
     <string name="computer">Computer Science</string>
     <string name="applied">Applied Computer Science</string>
     <string name="it">Information Technology</string>
+    <string name="mathematics">mathematics</string>
 
 </resources>
