@@ -2,9 +2,24 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Purple Shades -->
     <color name="purple">#9C27B0</color>
     <color name="primary">#7E57C2</color>
     <color name="lightPurple">#EDE7F6</color>
     <color name="darkPurple">#512DA8</color>
+
+    <!-- Additional Purple Shades -->
+    <color name="deepPurple">#673AB7</color>
+    <color name="mediumPurple">#9575CD</color>
+    <color name="softPurple">#D1C4E9</color>
+    <color name="lavenderPurple">#B39DDB</color>
+    <color name="grapePurple">#6A1B9A</color>
+    <color name="plumPurple">#8E24AA</color>
+    <color name="pastelPurple">#E1BEE7</color>
+    <color name="eggplantPurple">#4A148C</color>
+    <color name="dustyPurple">#AB47BC</color>
+
+    <!-- Neutral -->
     <color name="borderGray">#BDBDBD</color>
 </resources>
